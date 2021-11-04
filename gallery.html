@@ -1,23 +1,43 @@
 <html> 
   <head>
     <title>Gallery</title> 
-		 <style>
-body {
-  font-family: 'Courier New', monospace;
-}
-</style>
+	<link rel="stylesheet" href="gallery.css">
   </head>
  
   <body style="background: pink"> 
-    <h1>Gallery of Big Bird</h1> 
-	<img src="Bigbirdnewversion.webp" height="200px"></img>
-	<img src="pic1.jpeg" height="200px"></img>
-	<img src="pic2.jpeg" height="200px"></img>
-	<img src="pic3.jpg" height="200px"></img>
 	<div>
-		<a href="index.html">Home</a>
-		<a href="gallery.html">Gallery</a>
-		<a href="diet.html">Diet</a>
+		<a class="menulink" href="index.html">Home</a>
+		<a class="menulink" href="gallery.html">Gallery</a>
+		<a class="menulink" href="diet.html">Diet</a>
 	</div>
+    <h1>Gallery of Big Bird</h1>
+	<div class="slideshow-container">
+		<div class="mySlide fade">
+			<img src="Bigbirdnewversion.webp" style="width:100%">
+			<div class="text">Caption Text</div>
+		</div>
+		<div class="mySlide fade">
+			<img src="pic1.jpeg" style="width:100%">
+			<div class="text">Caption Text</div>
+		</div>
+		<div class="mySlide fade">
+			<img src="pic2.jpeg" style="width:100%">
+			<div class="text">Caption Text</div>
+		</div>
+		<div class="mySlide fade">
+			<img src="pic3.jpg" style="width:100%">
+			<div class="text">Caption Text</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	<script src="gallery.js"></script>
   </body>
 </html>
