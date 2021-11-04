@@ -1,7 +1,5 @@
-.menulink {
-    font-family: 'Courier New', monospace;
-    font-size: large;
-    padding: 10px;
+.active {
+    background-color: #717171;
   }
 
   h1 {
