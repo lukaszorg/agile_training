@@ -13,7 +13,8 @@ h1 {
   }
 
   .active {
-    background-color: #717171;
+    background-color: #f7dddc;
+    color: #000 !important;
   }
 
   .container { max-width: 1400px}

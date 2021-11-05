@@ -3,7 +3,8 @@ body {
 }
 
 .active {
-    background-color: #717171;
+    background-color: #f7dddc;
+    color: #000 !important;
   }
 
   h1 {
